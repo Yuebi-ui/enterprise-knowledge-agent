@@ -1,0 +1,33 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "员工报销期限是多少天？",
+  "status": "completed",
+  "answer": "员工费用发生后，须在30个自然日内提交报销申请。现有两份时效不同的报销制度（2025-01-10 和 2025-06-01）在这一点上规定一致，均为30个自然日，不存在实际差异。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "paragraph_id": "p1",
+      "version_date": "2025-01-10",
+      "quote": "员工费用发生后，须在30个自然日内提交报销申请。"
+    },
+    {
+      "doc_id": "D02",
+      "paragraph_id": "p1",
+      "version_date": "2025-06-01",
+      "quote": "员工费用发生后，须在30个自然日内提交报销申请。"
+    }
+  ],
+  "conflicts": [],
+  "missing_information": [],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 3,
+    "tool_calls": 3,
+    "token_usage": {
+      "prompt_tokens": 4243,
+      "completion_tokens": 360,
+      "total_tokens": 4603
+    }
+  }
+}

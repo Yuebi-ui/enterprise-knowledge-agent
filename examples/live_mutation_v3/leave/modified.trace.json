@@ -1,0 +1,8 @@
+[
+  {
+    "timestamp": "2026-10-30T11:52:47+00:00",
+    "event": "model_error",
+    "step": 1,
+    "error_type": "APIConnectionError"
+  }
+]

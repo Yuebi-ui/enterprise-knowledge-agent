@@ -1,0 +1,57 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "员工报销期限是多少天？",
+  "status": "needs_clarification",
+  "answer": "检索到两份均直接规定员工报销提交期限的制度，但规定不一致：D01（2025-01-10）要求费用发生后30个自然日内提交；D02（2025-06-01）要求15个自然日内提交。两份文档都没有注明适用范围和优先级，D01 还明确说明“未说明与其他报销制度之间的适用优先级”。因此，无法确定应适用哪一个期限，暂不能给出唯一答案。若仅从版本时间看，D02 更新，但仅凭版本日期无法确定它是否取代 D01。",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "paragraph_id": "p1",
+      "version_date": "2025-01-10",
+      "quote": "员工费用发生后，须在30个自然日内提交报销申请。"
+    },
+    {
+      "doc_id": "D01",
+      "paragraph_id": "p2",
+      "version_date": "2025-01-10",
+      "quote": "本制度未说明与其他报销制度之间的适用优先级。"
+    },
+    {
+      "doc_id": "D02",
+      "paragraph_id": "p1",
+      "version_date": "2025-06-01",
+      "quote": "员工费用发生后，须在15个自然日内提交报销申请。"
+    },
+    {
+      "doc_id": "D02",
+      "paragraph_id": "p2",
+      "version_date": "2025-06-01",
+      "quote": "本制度未说明与其他报销制度之间的适用优先级。"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "员工费用报销提交期限",
+      "doc_ids": [
+        "D01",
+        "D02"
+      ],
+      "reason": "D01 规定30个自然日内提交，D02 规定15个自然日内提交；两份文档均未注明适用范围和优先级，无法判定适用关系。"
+    }
+  ],
+  "missing_information": [
+    "两份报销制度的适用范围（如部门、地区、费用类型）",
+    "两份制度之间的适用优先级或替代关系说明"
+  ],
+  "follow_up_question": "这两份制度分别适用于哪类员工或费用？D02（2025-06-01）是否已取代 D01（2025-01-10）？",
+  "metrics": {
+    "model_calls": 3,
+    "tool_calls": 3,
+    "token_usage": {
+      "prompt_tokens": 3751,
+      "completion_tokens": 581,
+      "total_tokens": 4332
+    }
+  }
+}

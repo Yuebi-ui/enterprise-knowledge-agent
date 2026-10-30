@@ -1,0 +1,23 @@
+{
+  "assessment_type": "independent_post_run_review_not_model_output",
+  "source": "real DeepSeek logs uploaded by the user; original records preserved unchanged",
+  "leave": {
+    "original_status": "completed",
+    "modified_first_attempt_status": "tool_error",
+    "modified_first_attempt_error": "APIConnectionError",
+    "modified_retry_status": "completed",
+    "source_fact_changed_from": "3个工作日",
+    "source_fact_changed_to": "5个工作日",
+    "retried_result_cites_modified_D03": true,
+    "success_after_retry": true,
+    "note": "The original summary.json remains all_pass=false because the initial modified attempt failed."
+  },
+  "reimbursement_conflict": {
+    "original_status": "needs_clarification",
+    "modified_status": "completed",
+    "original_D02": "15个自然日",
+    "modified_D02": "30个自然日",
+    "modified_conflicts_empty": true,
+    "success": true
+  }
+}

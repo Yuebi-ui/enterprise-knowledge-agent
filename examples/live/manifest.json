@@ -1,0 +1,126 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "verification_method": "Independent review of real model outputs, citations and tool observations",
+  "source": "User-provided live.zip; normal and conflict originated as combined response/trace JSON",
+  "normalization_notice": "Files were reorganized, not rerun; original normal/conflict records kept in raw/; no model responses fabricated",
+  "total": 6,
+  "accepted_cases": 6,
+  "total_model_calls": 21,
+  "total_tool_calls": 16,
+  "total_tokens": 27965,
+  "cases": [
+    {
+      "case": "normal",
+      "status": "completed",
+      "mode": "live_deepseek",
+      "model": "deepseek-flash",
+      "model_calls": 3,
+      "tool_calls": 2,
+      "total_tokens": 3667,
+      "citations_verified_against_trace": true,
+      "citation_count": 1,
+      "tool_sequence": [
+        "search_documents",
+        "read_document"
+      ],
+      "source": "split_from_original_full_live_result",
+      "first_timestamp_utc": "2026-10-30T09:05:25+00:00",
+      "last_timestamp_utc": "2026-10-30T09:05:27+00:00"
+    },
+    {
+      "case": "conflict",
+      "status": "needs_clarification",
+      "mode": "live_deepseek",
+      "model": "deepseek-flash",
+      "model_calls": 3,
+      "tool_calls": 3,
+      "total_tokens": 4332,
+      "citations_verified_against_trace": true,
+      "citation_count": 4,
+      "tool_sequence": [
+        "search_documents",
+        "read_document",
+        "read_document"
+      ],
+      "source": "split_from_original_full_live_result",
+      "first_timestamp_utc": "2026-10-30T09:06:57+00:00",
+      "last_timestamp_utc": "2026-10-30T09:07:00+00:00"
+    },
+    {
+      "case": "out_of_scope",
+      "status": "insufficient_evidence",
+      "mode": "live_deepseek",
+      "model": "deepseek-flash",
+      "model_calls": 3,
+      "tool_calls": 3,
+      "total_tokens": 3996,
+      "citations_verified_against_trace": true,
+      "citation_count": 0,
+      "tool_sequence": [
+        "search_documents",
+        "search_documents",
+        "search_documents"
+      ],
+      "source": "copied_from_original_live_files",
+      "first_timestamp_utc": "2026-10-30T09:11:04+00:00",
+      "last_timestamp_utc": "2026-10-30T09:11:07+00:00"
+    },
+    {
+      "case": "paraphrase",
+      "status": "completed",
+      "mode": "live_deepseek",
+      "model": "deepseek-flash",
+      "model_calls": 3,
+      "tool_calls": 2,
+      "total_tokens": 3722,
+      "citations_verified_against_trace": true,
+      "citation_count": 2,
+      "tool_sequence": [
+        "search_documents",
+        "read_document"
+      ],
+      "source": "copied_from_original_live_files",
+      "first_timestamp_utc": "2026-10-30T09:11:08+00:00",
+      "last_timestamp_utc": "2026-10-30T09:11:10+00:00"
+    },
+    {
+      "case": "follow_up",
+      "status": "completed",
+      "mode": "live_deepseek",
+      "model": "deepseek-flash",
+      "model_calls": 5,
+      "tool_calls": 3,
+      "total_tokens": 7170,
+      "citations_verified_against_trace": true,
+      "citation_count": 2,
+      "tool_sequence": [
+        "search_documents",
+        "read_document",
+        "read_document"
+      ],
+      "source": "copied_from_original_live_files",
+      "first_timestamp_utc": "2026-10-30T09:11:11+00:00",
+      "last_timestamp_utc": "2026-10-30T09:11:15+00:00"
+    },
+    {
+      "case": "tool_failure",
+      "status": "completed",
+      "mode": "live_deepseek",
+      "model": "deepseek-flash",
+      "model_calls": 4,
+      "tool_calls": 3,
+      "total_tokens": 5078,
+      "citations_verified_against_trace": true,
+      "citation_count": 2,
+      "tool_sequence": [
+        "search_documents",
+        "search_documents",
+        "read_document"
+      ],
+      "source": "copied_from_original_live_files",
+      "first_timestamp_utc": "2026-10-30T09:11:16+00:00",
+      "last_timestamp_utc": "2026-10-30T09:11:19+00:00"
+    }
+  ]
+}

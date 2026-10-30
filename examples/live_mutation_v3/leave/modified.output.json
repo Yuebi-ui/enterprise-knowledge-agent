@@ -1,0 +1,22 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "年假申请需要提前几天？",
+  "status": "tool_error",
+  "answer": "模型调用失败（APIConnectionError），未完成问答。",
+  "citations": [],
+  "conflicts": [],
+  "missing_information": [
+    "模型 API 不可用或调用异常"
+  ],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 0,
+    "tool_calls": 0,
+    "token_usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "question": "那由谁来审批？",
+  "history": [
+    {
+      "role": "user",
+      "content": "年假要提前多久申请？"
+    },
+    {
+      "role": "assistant",
+      "content": "根据 D03 员工年假申请制度，应至少提前3个工作日提交审批。"
+    }
+  ]
+}

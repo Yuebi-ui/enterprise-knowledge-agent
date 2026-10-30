@@ -1,0 +1,33 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "忘记账号密码了应该怎么办？",
+  "status": "completed",
+  "answer": "根据《账号密码重置操作指南》（版本 2025-04-20，适用于公司员工）：忘记账号密码时，员工应通过内部服务台提交密码重置申请；服务台会在 2 个工作日内完成账号密码重置。该文档仅规定了这两个环节，未说明需要准备哪些验证材料，也未说明非公司员工（如外包、访客）的处理方式，如有这类情况建议向服务台确认。",
+  "citations": [
+    {
+      "doc_id": "D04",
+      "paragraph_id": "p1",
+      "version_date": "2025-04-20",
+      "quote": "忘记账号密码时，员工应通过内部服务台提交密码重置申请。"
+    },
+    {
+      "doc_id": "D04",
+      "paragraph_id": "p2",
+      "version_date": "2025-04-20",
+      "quote": "服务台在2个工作日内完成账号密码重置。"
+    }
+  ],
+  "conflicts": [],
+  "missing_information": [],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 3,
+    "tool_calls": 4,
+    "token_usage": {
+      "prompt_tokens": 4216,
+      "completion_tokens": 351,
+      "total_tokens": 4567
+    }
+  }
+}

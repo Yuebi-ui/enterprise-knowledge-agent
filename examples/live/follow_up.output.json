@@ -1,0 +1,33 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "那由谁来审批？",
+  "status": "completed",
+  "answer": "年假申请由员工的直属主管审批（依据 D03《员工年假申请制度》，2025-05-01 版，适用于公司全体正式员工）。此外，年假应至少提前3个工作日提交审批。",
+  "citations": [
+    {
+      "doc_id": "D03",
+      "paragraph_id": "p2",
+      "version_date": "2025-05-01",
+      "quote": "年假申请由员工的直属主管审批。"
+    },
+    {
+      "doc_id": "D03",
+      "paragraph_id": "p1",
+      "version_date": "2025-05-01",
+      "quote": "员工申请年假应至少提前3个工作日提交审批。"
+    }
+  ],
+  "conflicts": [],
+  "missing_information": [],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 5,
+    "tool_calls": 3,
+    "token_usage": {
+      "prompt_tokens": 6781,
+      "completion_tokens": 389,
+      "total_tokens": 7170
+    }
+  }
+}

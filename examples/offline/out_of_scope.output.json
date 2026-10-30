@@ -1,0 +1,22 @@
+{
+  "mode": "offline_scripted",
+  "model": "scripted-offline",
+  "question": "宠物托管补贴政策是什么？",
+  "status": "insufficient_evidence",
+  "answer": "知识库未找到宠物托管补贴的可信规定，无法确定是否存在该政策。",
+  "citations": [],
+  "conflicts": [],
+  "missing_information": [
+    "缺少宠物托管补贴相关制度原文"
+  ],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 2,
+    "tool_calls": 1,
+    "token_usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

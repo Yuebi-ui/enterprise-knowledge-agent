@@ -1,0 +1,23 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "宠物托管补贴政策是什么？",
+  "status": "insufficient_evidence",
+  "answer": "未能在企业文档中检索到任何关于“宠物托管补贴”的制度或政策。相关问题（宠物补贴、报销、寄养福利等）检索也无命中，仅返回两份未注明与宠物相关的员工费用报销制度（D01、D02）。因此无法确认公司是否存在宠物托管补贴政策及其金额、申请条件或审批流程，建议向人力资源部门确认，或提供该政策的文档名称/编号以便再次检索。",
+  "citations": [],
+  "conflicts": [],
+  "missing_information": [
+    "企业文档库中不存在宠物托管补贴相关制度原文",
+    "宠物托管补贴的适用对象、金额标准、申请与发放流程均无依据"
+  ],
+  "follow_up_question": "请问该政策是否有正式文档名称或编号（或发布部门），以便我按准确名称重新检索？",
+  "metrics": {
+    "model_calls": 3,
+    "tool_calls": 3,
+    "token_usage": {
+      "prompt_tokens": 3897,
+      "completion_tokens": 308,
+      "total_tokens": 4205
+    }
+  }
+}

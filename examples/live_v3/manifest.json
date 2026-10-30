@@ -1,0 +1,102 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "data_source": "synthetic documents",
+  "summary": {
+    "total": 6,
+    "heuristic_passed": 6
+  },
+  "cases": [
+    {
+      "case": "normal",
+      "passed": true,
+      "status": "completed",
+      "called_tools": [
+        "search_documents",
+        "read_document"
+      ],
+      "cited_docs": [
+        "D03"
+      ],
+      "injected_tool_failure_observed": false,
+      "note": "Heuristic checks only. Inspect answer semantics and traces manually."
+    },
+    {
+      "case": "conflict",
+      "passed": true,
+      "status": "needs_clarification",
+      "called_tools": [
+        "search_documents",
+        "read_document",
+        "read_document",
+        "read_document",
+        "read_document"
+      ],
+      "cited_docs": [
+        "D01",
+        "D02"
+      ],
+      "injected_tool_failure_observed": false,
+      "note": "Heuristic checks only. Inspect answer semantics and traces manually."
+    },
+    {
+      "case": "out_of_scope",
+      "passed": true,
+      "status": "insufficient_evidence",
+      "called_tools": [
+        "search_documents",
+        "search_documents",
+        "search_documents"
+      ],
+      "cited_docs": [],
+      "injected_tool_failure_observed": false,
+      "note": "Heuristic checks only. Inspect answer semantics and traces manually."
+    },
+    {
+      "case": "paraphrase",
+      "passed": true,
+      "status": "completed",
+      "called_tools": [
+        "search_documents",
+        "read_document",
+        "read_document"
+      ],
+      "cited_docs": [
+        "D03"
+      ],
+      "injected_tool_failure_observed": false,
+      "note": "Heuristic checks only. Inspect answer semantics and traces manually."
+    },
+    {
+      "case": "follow_up",
+      "passed": true,
+      "status": "completed",
+      "called_tools": [
+        "search_documents",
+        "read_document"
+      ],
+      "cited_docs": [
+        "D03"
+      ],
+      "injected_tool_failure_observed": false,
+      "note": "Heuristic checks only. Inspect answer semantics and traces manually."
+    },
+    {
+      "case": "tool_failure",
+      "passed": true,
+      "status": "completed",
+      "called_tools": [
+        "search_documents",
+        "search_documents",
+        "read_document",
+        "search_documents"
+      ],
+      "cited_docs": [
+        "D04"
+      ],
+      "injected_tool_failure_observed": true,
+      "note": "Heuristic checks only. Inspect answer semantics and traces manually."
+    }
+  ],
+  "notice": "Real provider call results. Scores are heuristic; manually inspect correctness."
+}

@@ -1,0 +1,39 @@
+{
+  "mode": "offline_source_check_NOT_a_model_run",
+  "mutation": {
+    "doc_id": "D03",
+    "old_text": "3个工作日",
+    "new_text": "5个工作日",
+    "question": "年假申请需要提前几天？",
+    "goal": "The source answer should change from 3 to 5 business days."
+  },
+  "original_source_paragraph": {
+    "paragraph_id": "p1",
+    "text": "员工申请年假应至少提前3个工作日提交审批。"
+  },
+  "modified_source_paragraph": {
+    "paragraph_id": "p1",
+    "text": "员工申请年假应至少提前5个工作日提交审批。"
+  },
+  "original_reimbursement_conflicts": [
+    {
+      "topic": "reimbursement_deadline",
+      "doc_ids": [
+        "D01",
+        "D02"
+      ],
+      "reason": "同一问题相关的制度原文存在不同规定：D01 为 30自然日；D02 为 15自然日；暂无明确的适用范围或优先级依据"
+    }
+  ],
+  "modified_reimbursement_conflicts": [
+    {
+      "topic": "reimbursement_deadline",
+      "doc_ids": [
+        "D01",
+        "D02"
+      ],
+      "reason": "同一问题相关的制度原文存在不同规定：D01 为 30自然日；D02 为 15自然日；暂无明确的适用范围或优先级依据"
+    }
+  ],
+  "source_changed": true
+}

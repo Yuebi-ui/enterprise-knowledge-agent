@@ -1,0 +1,47 @@
+{
+  "notice": "Scripted offline results. They do NOT prove model-driven ReAct.",
+  "cases": [
+    {
+      "case": "normal",
+      "mode": "offline_scripted",
+      "status": "completed",
+      "model_calls": 3,
+      "tool_calls": 2
+    },
+    {
+      "case": "conflict",
+      "mode": "offline_scripted",
+      "status": "needs_clarification",
+      "model_calls": 4,
+      "tool_calls": 3
+    },
+    {
+      "case": "out_of_scope",
+      "mode": "offline_scripted",
+      "status": "insufficient_evidence",
+      "model_calls": 2,
+      "tool_calls": 1
+    },
+    {
+      "case": "paraphrase",
+      "mode": "offline_scripted",
+      "status": "completed",
+      "model_calls": 3,
+      "tool_calls": 2
+    },
+    {
+      "case": "follow_up",
+      "mode": "offline_scripted",
+      "status": "completed",
+      "model_calls": 3,
+      "tool_calls": 2
+    },
+    {
+      "case": "tool_failure",
+      "mode": "offline_scripted",
+      "status": "completed",
+      "model_calls": 4,
+      "tool_calls": 3
+    }
+  ]
+}

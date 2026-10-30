@@ -1,0 +1,100 @@
+[
+  {
+    "timestamp": "2026-10-30T12:01:39+00:00",
+    "event": "model_decision",
+    "step": 1,
+    "action": "tool_calls",
+    "tools": [
+      "search_documents"
+    ],
+    "observed_before_decision": [],
+    "public_basis_note": "可观察工具反馈供模型本轮决策参考，不是模型内部思维过程",
+    "final_preview": null
+  },
+  {
+    "timestamp": "2026-10-30T12:01:39+00:00",
+    "event": "tool_result",
+    "step": 1,
+    "call_id": "call_00_AH3PUa5iSYck3pM8Wvw00248",
+    "tool": "search_documents",
+    "arguments": {
+      "query": "年假申请审批人 审批流程"
+    },
+    "observation_summary": "search found 1 candidate docs: ['D03']",
+    "observation": {
+      "ok": true,
+      "query": "年假申请审批人 审批流程",
+      "count": 1,
+      "results": [
+        {
+          "doc_id": "D03",
+          "title": "员工年假申请制度",
+          "version_date": "2025-05-01",
+          "scope": "公司全体正式员工",
+          "priority": "未注明",
+          "summary": "年假申请提前量和审批人。",
+          "score": 20,
+          "matched_paragraph_ids": [
+            "p2",
+            "p1"
+          ]
+        }
+      ],
+      "note": "Search summaries are not original citations; read documents before answering."
+    }
+  },
+  {
+    "timestamp": "2026-10-30T12:01:40+00:00",
+    "event": "model_decision",
+    "step": 2,
+    "action": "tool_calls",
+    "tools": [
+      "read_document"
+    ],
+    "observed_before_decision": [
+      "search found 1 candidate docs: ['D03']"
+    ],
+    "public_basis_note": "可观察工具反馈供模型本轮决策参考，不是模型内部思维过程",
+    "final_preview": null
+  },
+  {
+    "timestamp": "2026-10-30T12:01:40+00:00",
+    "event": "tool_result",
+    "step": 2,
+    "call_id": "call_00_4ImLwclUOXkt9hK3ywuM3818",
+    "tool": "read_document",
+    "arguments": {
+      "doc_id": "D03",
+      "paragraph_id": "p2"
+    },
+    "observation_summary": "read D03 (1 paragraphs)",
+    "observation": {
+      "ok": true,
+      "document": {
+        "doc_id": "D03",
+        "title": "员工年假申请制度",
+        "version_date": "2025-05-01",
+        "scope": "公司全体正式员工",
+        "priority": "未注明",
+        "paragraphs": [
+          {
+            "paragraph_id": "p2",
+            "text": "年假申请由员工的直属主管审批。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-10-30T12:01:42+00:00",
+    "event": "model_decision",
+    "step": 3,
+    "action": "final",
+    "tools": [],
+    "observed_before_decision": [
+      "read D03 (1 paragraphs)"
+    ],
+    "public_basis_note": "可观察工具反馈供模型本轮决策参考，不是模型内部思维过程",
+    "final_preview": "{\"status\":\"completed\",\"answer\":\"根据《员工年假申请制度》（2025-05-01 版，适用于公司全体正式员工），年假申请由员工的直属主管审批。\",\"citations\":[{\"doc_id\":\"D03\",\"paragraph_id\":\"p2\",\"version_date\":\"2025-05-01\",\"quote\":\"年假申请由员工的直属主管审批。\"}],\"conflicts\":[],\"missing_information\":[],\"follow_up_question\":null}"
+  }
+]

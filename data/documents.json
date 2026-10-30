@@ -1,0 +1,161 @@
+{
+  "dataset": "Synthetic policies for assessment; not real enterprise documents",
+  "documents": [
+    {
+      "doc_id": "D01",
+      "title": "员工费用报销制度（规则A）",
+      "version_date": "2025-01-10",
+      "scope": "未注明",
+      "priority": "未注明",
+      "summary": "说明员工费用提交报销的期限。",
+      "keywords": [
+        "报销",
+        "费用报销",
+        "报销期限",
+        "报销时限",
+        "报销时间",
+        "员工费用"
+      ],
+      "conflict_group": "reimbursement_deadline",
+      "paragraphs": [
+        {
+          "paragraph_id": "p1",
+          "text": "员工费用发生后，须在30个自然日内提交报销申请。"
+        },
+        {
+          "paragraph_id": "p2",
+          "text": "本制度未说明与其他报销制度之间的适用优先级。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D02",
+      "title": "员工费用报销制度（规则B）",
+      "version_date": "2025-06-01",
+      "scope": "未注明",
+      "priority": "未注明",
+      "summary": "另一份员工费用提交报销期限的制度。",
+      "keywords": [
+        "报销",
+        "费用报销",
+        "报销期限",
+        "报销时限",
+        "报销时间",
+        "员工费用"
+      ],
+      "conflict_group": "reimbursement_deadline",
+      "paragraphs": [
+        {
+          "paragraph_id": "p1",
+          "text": "员工费用发生后，须在15个自然日内提交报销申请。"
+        },
+        {
+          "paragraph_id": "p2",
+          "text": "本制度未说明与其他报销制度之间的适用优先级。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D03",
+      "title": "员工年假申请制度",
+      "version_date": "2025-05-01",
+      "scope": "公司全体正式员工",
+      "priority": "未注明",
+      "summary": "年假申请提前量和审批人。",
+      "keywords": [
+        "年假",
+        "请假",
+        "休假",
+        "提前申请",
+        "年假申请",
+        "年休假",
+        "审批人"
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "p1",
+          "text": "员工申请年假应至少提前3个工作日提交审批。"
+        },
+        {
+          "paragraph_id": "p2",
+          "text": "年假申请由员工的直属主管审批。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D04",
+      "title": "账号密码重置操作指南",
+      "version_date": "2025-04-20",
+      "scope": "公司员工",
+      "priority": "未注明",
+      "summary": "账号密码遗忘后的重置渠道和办理时限。",
+      "keywords": [
+        "忘记密码",
+        "密码重置",
+        "账号重置",
+        "账号",
+        "密码",
+        "服务台"
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "p1",
+          "text": "忘记账号密码时，员工应通过内部服务台提交密码重置申请。"
+        },
+        {
+          "paragraph_id": "p2",
+          "text": "服务台在2个工作日内完成账号密码重置。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D05",
+      "title": "员工工牌补办流程",
+      "version_date": "2025-02-13",
+      "scope": "所有持卡员工",
+      "priority": "未注明",
+      "summary": "工牌丢失后的登记和补办费用。",
+      "keywords": [
+        "工牌",
+        "补办工牌",
+        "遗失工牌",
+        "工牌补办",
+        "行政登记"
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "p1",
+          "text": "员工遗失工牌后应在当日向行政部门登记。"
+        },
+        {
+          "paragraph_id": "p2",
+          "text": "补办工牌费用为20元。"
+        }
+      ]
+    },
+    {
+      "doc_id": "D06",
+      "title": "星河协作产品功能介绍",
+      "version_date": "2025-07-01",
+      "scope": "星河协作标准版",
+      "priority": "未注明",
+      "summary": "任务看板及离线编辑能力边界。",
+      "keywords": [
+        "星河协作",
+        "产品功能",
+        "任务看板",
+        "离线编辑"
+      ],
+      "paragraphs": [
+        {
+          "paragraph_id": "p1",
+          "text": "星河协作标准版支持项目任务看板。"
+        },
+        {
+          "paragraph_id": "p2",
+          "text": "星河协作标准版暂不支持离线编辑。"
+        }
+      ]
+    }
+  ]
+}

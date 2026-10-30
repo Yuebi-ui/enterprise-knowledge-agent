@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-10-30T10:19:33+00:00",
+    "event": "model_decision",
+    "step": 1,
+    "action": "tool_calls",
+    "tools": [
+      "search_documents"
+    ],
+    "observed_before_decision": [],
+    "public_basis_note": "可观察工具反馈供模型本轮决策参考，不是模型内部思维过程",
+    "final_preview": null
+  },
+  {
+    "timestamp": "2026-10-30T10:19:33+00:00",
+    "event": "tool_result",
+    "step": 1,
+    "call_id": "offline_call_1",
+    "tool": "search_documents",
+    "arguments": {
+      "query": "宠物托管补贴 政策"
+    },
+    "observation_summary": "search found 0 candidate docs: []",
+    "observation": {
+      "ok": true,
+      "query": "宠物托管补贴 政策",
+      "count": 0,
+      "results": [],
+      "note": "Search summaries are not original citations; read documents before answering."
+    }
+  },
+  {
+    "timestamp": "2026-10-30T10:19:33+00:00",
+    "event": "model_decision",
+    "step": 2,
+    "action": "final",
+    "tools": [],
+    "observed_before_decision": [
+      "search found 0 candidate docs: []"
+    ],
+    "public_basis_note": "可观察工具反馈供模型本轮决策参考，不是模型内部思维过程",
+    "final_preview": "{\"status\": \"insufficient_evidence\", \"answer\": \"知识库未找到宠物托管补贴的可信规定，无法确定是否存在该政策。\", \"citations\": [], \"conflicts\": [], \"missing_information\": [\"缺少宠物托管补贴相关制度原文\"], \"follow_up_question\": null}"
+  }
+]

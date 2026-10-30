@@ -1,0 +1,27 @@
+{
+  "mode": "live_deepseek",
+  "model": "deepseek-flash",
+  "question": "年假申请需要提前几天？",
+  "status": "completed",
+  "answer": "根据《员工年假申请制度》（公司全体正式员工适用，2025-05-01 版），员工申请年假应至少提前 3 个工作日提交审批。该制度未区分不同天数或特殊情形的例外规定。",
+  "citations": [
+    {
+      "doc_id": "D03",
+      "paragraph_id": "p1",
+      "version_date": "2025-05-01",
+      "quote": "员工申请年假应至少提前3个工作日提交审批。"
+    }
+  ],
+  "conflicts": [],
+  "missing_information": [],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 3,
+    "tool_calls": 2,
+    "token_usage": {
+      "prompt_tokens": 3464,
+      "completion_tokens": 203,
+      "total_tokens": 3667
+    }
+  }
+}

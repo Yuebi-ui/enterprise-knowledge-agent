@@ -1,0 +1,27 @@
+{
+  "mode": "offline_scripted",
+  "model": "scripted-offline",
+  "question": "那由谁来审批？",
+  "status": "completed",
+  "answer": "年假申请由直属主管审批。",
+  "citations": [
+    {
+      "doc_id": "D03",
+      "paragraph_id": "p2",
+      "version_date": "2025-05-01",
+      "quote": "年假申请由员工的直属主管审批。"
+    }
+  ],
+  "conflicts": [],
+  "missing_information": [],
+  "follow_up_question": null,
+  "metrics": {
+    "model_calls": 3,
+    "tool_calls": 2,
+    "token_usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+}

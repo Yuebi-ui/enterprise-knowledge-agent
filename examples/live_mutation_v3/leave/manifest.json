@@ -1,0 +1,41 @@
+{
+  "mode": "live_deepseek",
+  "mutation": {
+    "doc_id": "D03",
+    "old_text": "3个工作日",
+    "new_text": "5个工作日",
+    "question": "年假申请需要提前几天？",
+    "goal": "The source answer should change from 3 to 5 business days."
+  },
+  "original_status": "completed",
+  "modified_status": "tool_error",
+  "original_reimbursement_conflicts": [
+    {
+      "topic": "reimbursement_deadline",
+      "doc_ids": [
+        "D01",
+        "D02"
+      ],
+      "reason": "同一问题相关的制度原文存在不同规定：D01 为 30自然日；D02 为 15自然日；暂无明确的适用范围或优先级依据"
+    }
+  ],
+  "modified_reimbursement_conflicts": [
+    {
+      "topic": "reimbursement_deadline",
+      "doc_ids": [
+        "D01",
+        "D02"
+      ],
+      "reason": "同一问题相关的制度原文存在不同规定：D01 为 30自然日；D02 为 15自然日；暂无明确的适用范围或优先级依据"
+    }
+  ],
+  "checks": {
+    "original_completed": true,
+    "modified_completed": false,
+    "original_citation_3_business_days": true,
+    "modified_citation_5_business_days": false,
+    "original_answer_3_business_days": true,
+    "modified_answer_5_business_days": false
+  },
+  "pass": false
+}

@@ -1,0 +1,33 @@
+{
+  "mode": "live_deepseek",
+  "mutation": {
+    "doc_id": "D02",
+    "old_text": "15个自然日",
+    "new_text": "30个自然日",
+    "question": "员工报销期限是多少天？",
+    "goal": "D01/D02 originally conflict; after mutation both specify 30 calendar days."
+  },
+  "original_status": "needs_clarification",
+  "modified_status": "completed",
+  "original_reimbursement_conflicts": [
+    {
+      "topic": "reimbursement_deadline",
+      "doc_ids": [
+        "D01",
+        "D02"
+      ],
+      "reason": "同一问题相关的制度原文存在不同规定：D01 为 30自然日；D02 为 15自然日；暂无明确的适用范围或优先级依据"
+    }
+  ],
+  "modified_reimbursement_conflicts": [],
+  "checks": {
+    "original_requires_clarification": true,
+    "original_mentions_conflicting_docs": true,
+    "original_cites_15_and_30": true,
+    "modified_completed": true,
+    "modified_conflicts_empty": true,
+    "modified_answer_30_calendar_days": true,
+    "modified_quote_30_calendar_days": true
+  },
+  "pass": true
+}
